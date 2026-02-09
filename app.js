@@ -46,8 +46,7 @@ document.getElementById("registerBtn").addEventListener("click", async () => {
     message.style.color = "green";
 
   } catch (e) {
-    message.textContent = "Error. Check console.";
-    message.style.color = "red";
-    console.error(e);
-  }
+  message.style.color = "red";
+  message.textContent = "Firebase error: " + e.message;
+}
 });
