@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tournament Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>🏆 Tournament Registration</h2>
+
+  <input id="playerName" placeholder="Player Name">
+  <input id="teamName" placeholder="Team Name">
+  <input id="whatsapp" placeholder="WhatsApp Number" type="tel">
+
+  <button onclick="register()">Register</button>
+
+  <div id="result" class="hidden">
+    <p>Your Unique Code</p>
+    <div class="code" id="codeBox"></div>
+    <small>⚠️ Code locked to this device</small>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
