@@ -1,34 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tournament Registration</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .message {
+      margin-top: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="card">
-  <h2>🏆 Tournament Registration</h2>
+  <div class="container">
+    <h2>Player Registration</h2>
 
-  <input id="playerName" placeholder="Player Name">
-  <input id="teamName" placeholder="Team Name">
-  <input id="whatsapp" placeholder="WhatsApp Number" type="tel">
+    <form id="regForm">
+      <input type="text" id="playerName" placeholder="Player Name" required />
+      <input type="text" id="teamName" placeholder="Team Name" required />
+      <input type="tel" id="whatsapp" placeholder="WhatsApp Number" required />
 
-<button type="button" onclick="registerPlayer()">Register</button>
+      <!-- IMPORTANT: type="button" -->
+      <button type="button" onclick="registerPlayer()">Register</button>
+    </form>
 
-<script src="app.js"></script>
-
-  <div id="result" class="hidden">
-    <p>Your Unique Code</p>
-    <div class="code" id="codeBox"></div>
-    <small>⚠️ Code locked to this device</small>
+    <div class="message" id="message"></div>
   </div>
-</div>
 
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-<script src="app.js"></script>
-
+  <!-- JavaScript -->
+  <script src="app.js"></script>
 </body>
 </html>
