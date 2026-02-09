@@ -4,78 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tournament Registration</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 400px;
-      margin: auto;
-      background: #ffffff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 12px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-
-    button {
-      width: 100%;
-      padding: 12px;
-      font-size: 16px;
-      background: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #0056b3;
-    }
-
-    .message {
-      margin-top: 15px;
-      text-align: center;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <div class="container">
     <h2>Player Registration</h2>
 
-    <form id="regForm">
-      <input type="text" id="playerName" placeholder="Player Name" required />
-      <input type="text" id="teamName" placeholder="Team Name" required />
-      <input type="tel" id="whatsapp" placeholder="WhatsApp Number" required />
+    <input type="text" id="playerName" placeholder="Player Name">
+    <input type="text" id="teamName" placeholder="Team Name">
+    <input type="tel" id="whatsapp" placeholder="WhatsApp Number">
 
-      <!-- IMPORTANT: type="button" -->
-      <button type="button" onclick="registerPlayer()">Register</button>
-    </form>
+    <button type="button" id="registerBtn">Register</button>
 
-    <div class="message" id="message"></div>
+    <p id="message"></p>
   </div>
 
-  <!-- JavaScript -->
   <script src="app.js"></script>
 </body>
 </html>
