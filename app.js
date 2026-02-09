@@ -1,7 +1,10 @@
 const firebaseConfig = {
-  apiKey: "YOUR_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT"
+  apiKey: "AIzaSyC_UEeoi9vk5hBZ81tLdio-de9WST40F-A",
+  authDomain: "tournament-lock-system.firebaseapp.com",
+  projectId: "tournament-lock-system",
+  storageBucket: "tournament-lock-system.firebasestorage.app",
+  messagingSenderId: "89751386172",
+  appId: "1:89751386172:web:80130fb609c99943522b39"
 };
 
 firebase.initializeApp(firebaseConfig);
