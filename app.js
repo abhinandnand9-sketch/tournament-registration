@@ -2,12 +2,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebas
 import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "PASTE_YOUR_API_KEY_HERE",
-  authDomain: "PASTE_YOUR_AUTH_DOMAIN",
-  projectId: "PASTE_YOUR_PROJECT_ID",
-  storageBucket: "PASTE_YOUR_STORAGE_BUCKET",
-  messagingSenderId: "PASTE_YOUR_SENDER_ID",
-  appId: "PASTE_YOUR_APP_ID"
+  apiKey: "AIzaSyC_UEeoi9vk5hBZ81tLdio-de9WST40F-A",
+  authDomain: "tournament-lock-system.firebaseapp.com",
+  projectId: "tournament-lock-system",
+  storageBucket: "tournament-lock-system.firebasestorage.app",
+  messagingSenderId: "89751386172",
+  appId: "1:89751386172:web:80130fb609c99943522b39"
 };
 
 const app = initializeApp(firebaseConfig);
