@@ -1,5 +1,5 @@
 // PROOF THAT JS IS LOADED
-alert("JavaScript connected");
+
 
 // Button click handler
 document.getElementById("registerBtn").addEventListener("click", function () {
